@@ -24,7 +24,7 @@ void Calculadora::Run()
 		}
 		else
 		{
-			std::cout << "Entrada inválida de \'" << choice << "\' - tente novamente.\n";
+			std::cout << "Entrada invalida de \'" << choice << "\' - tente novamente.\n";
 
 		}
 	}
@@ -38,8 +38,7 @@ void Calculadora::Run()
 		float result = firstNumber + secondNumber;
 		std::cout << "Resultado: " << firstNumber << " + " << secondNumber << " = " << result << std::endl;
 		pastResults.push_back(result);
-	}
-		
+	}		
 		break;
 	case SUBTRACT:
 		std::cout << "( - ) - Subtrair!\n";
@@ -70,7 +69,7 @@ void Calculadora::Run()
 		std::cout << this;
 		break;
 	default:
-		std::cout << "not a valid choice\n";
+		std::cout << "Escolha invalida\n";
 		//break;
 	}
 }

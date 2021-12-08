@@ -3,7 +3,7 @@
 
 bool checkIfUserWantsToContinue()
 {
-	std::cout << "Fazer outro cálculo? ('y' para sim): ";
+	std::cout << "Fazer outro calculo? ('y' para sim): ";
 	char escolha{};
 	std::cin >> escolha;
 

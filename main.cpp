@@ -1,12 +1,23 @@
 ﻿// CalculadoraOOP.cpp: define o ponto de entrada para o aplicativo.
-//
 
 #include <iostream>
 
-using namespace std;
+#include "Calculadora/Calculadora.h"
+#include "Helpers/helpers.h"
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	Calculadora calc;
+
+	bool start = true;
+
+	while (start)
+	{
+		calc.Run();
+		start = checkIfUserWantsToContinue();
+	}
+	
+	std::cout << &calc;
+
 	return 0;
 }
