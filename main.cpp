@@ -13,7 +13,10 @@ int main()
 
 	while (start)
 	{
+		// inicio
 		calc.Run();
+
+		// se for verdadeiro, o while irá se repetir
 		start = checkIfUserWantsToContinue();
 	}
 	
